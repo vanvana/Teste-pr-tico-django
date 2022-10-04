@@ -6,14 +6,14 @@ import re
 from validate_docbr import CPF
 
 class Command(BaseCommand):
-    help = 'Closes the specified poll for voting'
+    help = 'Creates a specific number of clients'
 
     def add_arguments(self, parser):
         parser.add_argument('number', nargs='+', type=int)
 
     def handle(self, *args, **options):
         if len(options['number']) > 1:
-            self.stderr.write("O comando requer apenas um argumento")
+            self.stderr.write("This command only requires one argument")
 
         for i in range(0, int(options['number'][0])):
             consoante= ['B','C','D','F','G','H','J','K','L','M','N','P','R','S','T','V','X']
