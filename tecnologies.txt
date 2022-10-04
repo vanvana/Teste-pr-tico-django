@@ -1,0 +1,29 @@
+# crispy forms 1.14.0
+https://django-crispy-forms.readthedocs.io/en/latest/index.html
+
+
+# localflavor 3.1
+https://django-localflavor.readthedocs.io/en/latest/
+
+
+# Bootstrap 5.0.2
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+
+# Django 4.1.1
+https://docs.djangoproject.com/pt-br/4.1/intro/tutorial01/
+
+
+# HTML5
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+
+
+# Python 3.10.4
+https://docs.python.org/pt-br/3/tutorial/
+
+
+# Validate-docbr 1.10.0 https://pypi.org/project/validate-docbr/<br><br>
+
+
+
+# Jquery mask 1.14.16 https://cdnjs.com/libraries/jquery.mask/1.14.16

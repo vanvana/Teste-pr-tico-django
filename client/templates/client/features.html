@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+<!-- load the crispy forms-->
+{% load crispy_forms_tags %}
+
+{% block title %}Recursos{% endblock title %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card p-4">
+                    <h4>Tecnologias usadas nesse projeto: </h4><br> <br><br>
+                    <p>
+                        
+                        # crispy forms 1.14.0
+                        https://django-crispy-forms.readthedocs.io/en/latest/index.html<br><br>
+                        
+                        
+                        # localflavor 3.1
+                        https://django-localflavor.readthedocs.io/en/latest/<br><br>
+                        
+                        
+                        # Bootstrap 5.0.2
+                        https://getbootstrap.com/docs/5.2/getting-started/introduction/<br><br>
+                        
+                        
+                        # Django 4.1.1
+                        https://docs.djangoproject.com/pt-br/4.1/intro/tutorial01/<br><br>
+                        
+                        
+                        # HTML5
+                        https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element<br><br>
+                        
+                        
+                        # Python 3.10.4
+                        https://docs.python.org/pt-br/3/tutorial/<br><br>
+
+
+                        # Validate-docbr 1.10.0 https://pypi.org/project/validate-docbr/<br><br>
+
+                        # Jquery mask 1.14.16 https://cdnjs.com/libraries/jquery.mask/1.14.16
+
+                    </p>
+                
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endblock scripts %}

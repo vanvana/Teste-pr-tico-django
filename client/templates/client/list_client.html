@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}Listar Cliente{% endblock title %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card m-2 p-4">
+                <div class="col-12">
+                    <form method="get">
+                        <div class="input-group mb-3 col-3">
+                            <input type="text" class="form-control" placeholder="Nome do cliente" name="name">
+                        </div>
+                        <div class="input-group mb-3 col-3">
+                            <input type="text" class="form-control" placeholder="CPF do cliente" name="cpf">
+                        </div>
+                        <div class="input-group mb-3 col-3">
+                            <input type="number" class="form-control" placeholder="Idade" name="age">
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-primary col-2">Buscar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card p-4 m-2">
+                <div class="card-header">
+                    <h3 class="card-title">Clientes Cadastrados</h3>
+                    <a href="{% url 'create-client' %}" class="btn btn-primary btn-sm" style="float:right">Novo Cliente</a>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="td_clientes" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Idade</th>
+                            <th>Botões</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+        
+        
+                        {% for cliente in object_list %}
+                            <tr>
+                                <td>{{ cliente.name }}</td>
+                                <td>{{ cliente.cpf | default:'-' }}</td>
+                                <td>{{ cliente.age | default:'-' }}</td>
+                                <td>
+                                    <a href="{% url 'update-client' cliente.pk %}" class="btn btn-primary btn-sm">Editar</a>
+                                    <a href="{% url 'delete-client' cliente.pk %}" class="btn btn-danger btn-sm">Apagar</a>
+                                </td>
+                                
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}
