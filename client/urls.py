@@ -1,4 +1,3 @@
-from msilib.schema import Feature
 from django.urls import path
 
 from client.views import CreateClient, DeleteClient, Features, ListClient, UpdateClient, delete_client, Features
